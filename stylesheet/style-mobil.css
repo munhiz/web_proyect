@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: #003366;
+    }
+    #wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    }
+    #container {
+    width: auto;
+    margin-left:2%;
+    margin-right:2%;
+    }
+    #header {
+    width: 100%;
+    background-color:#FFFFFF;
+    height: 150px;
+    margin-bottom: 10px;
+    }
+    #content {
+    width: 100%;
+    background-color:#FFFFFF;
+    height: 400px;
+} 
