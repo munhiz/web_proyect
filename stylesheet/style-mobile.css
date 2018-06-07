@@ -44,9 +44,9 @@ body {
     margin-left: 2%; }
     #wrapper #container #header {
       width: 96%;
-      margin: 10px auto;
-      background-color: #FFFFFF;
-      height: 100px;
+      margin: auto;
+      background-color: #eb7272;
+      height: 25px;
       z-index: 100;
       position: fixed; }
       #wrapper #container #header .top-left {
