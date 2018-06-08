@@ -1,6 +1,28 @@
 #content {
     width: 100%;
     background-color:#FFFFFF;
-    height: 400px;
+    height:auto;
     margin-bottom:10px;
+    #portfolio{
+        padding-top: 60px;
+      article{
+          text-align: left;
+          img{
+              width: 100%;
+          }
+      }
+      
+    }
+    .container-text{
+        padding-top:60px;
+        #intro-txt{
+            text-align: left;
+            p{
+                font-family: Berthold Bold;
+                font-size: 30px;
+                line-height: 36px;
+            
+            }
+        }
+    }
 } 

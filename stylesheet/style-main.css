@@ -1,7 +1,21 @@
 #content {
   width: 100%;
   background-color: #FFFFFF;
-  height: 400px;
+  height: auto;
   margin-bottom: 10px; }
+  #content #portfolio {
+    padding-top: 60px; }
+    #content #portfolio article {
+      text-align: left; }
+      #content #portfolio article img {
+        width: 100%; }
+  #content .container-text {
+    padding-top: 60px; }
+    #content .container-text #intro-txt {
+      text-align: left; }
+      #content .container-text #intro-txt p {
+        font-family: Berthold Bold;
+        font-size: 30px;
+        line-height: 36px; }
 
 /*# sourceMappingURL=style-main.css.map */
