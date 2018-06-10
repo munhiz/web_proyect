@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Berthold Regular;
+  src: url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.eot);
+  src: url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.woff) format("woff"), url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.ttf) format("truetype"), url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.svg) format("svg"), url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Berthold Light;
+  src: url(/fonts/Berthold_akzidenz/Light/Berthold-Light.eot);
+  src: url(/fonts/Berthold_akzidenz/Light/Berthold-Light.woff) format("woff"), url(/fonts/Berthold_akzidenz/Light/Berthold-Light.ttf) format("truetype"), url(/fonts/Berthold_akzidenz/Light/Berthold-Light.svg) format("svg"), url(/fonts/Berthold_akzidenz/Light/Berthold-Light.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Berthold Medium;
+  src: url(/fonts/Berthold_akzidenz/Medium/Berthold-Medium.eot);
+  src: url(/fonts/Berthold_akzidenz/Medium/Berthold-Medium.woff) format("woff"), url(/fonts/Berthold_akzidenz/Medium/Berthold-Medium.ttf) format("truetype"), url(/fonts/Berthold_akzidenz/Medium/Berthold-Medium.svg) format("svg"), url(/fonts/Berthold_akzidenz/Medium/Berthold-Medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Berthold Bold;
+  src: url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.eot);
+  src: url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.woff) format("woff"), url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.ttf) format("truetype"), url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.svg) format("svg"), url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  background-color: #909091;
+  font-family: berthold Light;
+  font-size: 18px;
+  text-decoration: none; }
+  body a {
+    text-decoration: none; }
+
+#wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px; }
+  #wrapper #container {
+    width: auto;
+    margin-right: 2%;
+    margin-left: 2%; }
+    #wrapper #container #header {
+      width: 100%;
+      margin: auto;
+      background-color: #eb7272;
+      height: 35px;
+      z-index: 100;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding-top: 10px;
+      padding-left: 2%;
+      padding-right: 2%; }
+      #wrapper #container #header .top-left {
+        text-align: left;
+        float: left;
+        text-decoration: none; }
+      #wrapper #container #header .main-menu {
+        display: none; }
+      #wrapper #container #header .nav-menu {
+        float: right; }
+        #wrapper #container #header .nav-menu li {
+          display: inline;
+          padding-left: 15px; }
+      #wrapper #container #header .more-bt {
+        float: right;
+        text-align: right;
+        z-index: 100; }
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0%;
+  width: 0%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #fffdfd;
+  /* Black fallback color */
+  background-color: #fffdfd;
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: height 0.5s ease-out;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: Berthold Bold; }
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20 px;
+  color: black;
+  display: inline;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */ }
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  text-decoration: underline; }
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  font-size: 20px; }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+#content {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: auto;
+  margin-bottom: 10px; }
+  #content #portfolio {
+    padding-top: 80px; }
+    #content #portfolio article {
+      text-align: left;
+      padding-bottom: 15px; }
+      #content #portfolio article img {
+        width: 100%;
+        padding-bottom: 5px; }
+  #content .container-text {
+    padding-top: 110px; }
+    #content .container-text #intro-txt {
+      text-align: left; }
+      #content .container-text #intro-txt p {
+        font-family: Berthold Bold;
+        font-size: 34px;
+        line-height: 46px; }
+
+#footer {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: left; }
+  #footer #social-link {
+    padding-top: 60px;
+    text-align: left; }
+    #footer #social-link li {
+      padding-top: 8px; }
+      #footer #social-link li a:hover {
+        text-decoration: underline; }
+  #footer #ft-mail {
+    padding-top: 40px;
+    width: 80%; }
+    #footer #ft-mail article p {
+      line-height: 20px; }
+  #footer #top {
+    padding-top: 40px; }
+    #footer #top article {
+      display: inline; }
+  #footer #copyright {
+    padding-top: 40px;
+    left: 0;
+    bottom: 0;
+    font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  background-color: #909091;
+  font-family: berthold Light;
+  font-size: 18px;
+  text-decoration: none; }
+  body a {
+    text-decoration: none; }
+
 @font-face {
   font-family: Berthold Regular;
   src: url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.eot);
@@ -22,18 +34,6 @@
   src: url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.woff) format("woff"), url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.ttf) format("truetype"), url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.svg) format("svg"), url(/fonts/Berthold_akzidenz/Bold/Berthold-Bold.woff2) format("woff2");
   font-weight: normal;
   font-style: normal; }
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
-body {
-  background-color: #909091;
-  font-family: berthold Light;
-  font-size: 18px;
-  text-decoration: none; }
-  body a {
-    text-decoration: none; }
-
 #wrapper {
   width: 100%;
   text-align: center;
@@ -122,7 +122,7 @@ body {
 .overlay .closebtn {
   position: absolute;
   top: 3px;
-  right: 3px;
+  right: 0px;
   font-size: 20px; }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -134,5 +134,52 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px; } }
+#content {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: auto;
+  margin-bottom: 10px; }
+  #content #portfolio {
+    padding-top: 80px; }
+    #content #portfolio article {
+      text-align: left;
+      padding-bottom: 15px; }
+      #content #portfolio article img {
+        width: 100%;
+        padding-bottom: 5px; }
+  #content .container-text {
+    padding-top: 110px; }
+    #content .container-text #intro-txt {
+      text-align: left; }
+      #content .container-text #intro-txt p {
+        font-family: Berthold Bold;
+        font-size: 34px;
+        line-height: 46px; }
 
-/*# sourceMappingURL=style-header.css.map */
+#footer {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: left; }
+  #footer #social-link {
+    padding-top: 60px;
+    text-align: left; }
+    #footer #social-link li {
+      padding-top: 8px; }
+      #footer #social-link li a:hover {
+        text-decoration: underline; }
+  #footer #ft-mail {
+    padding-top: 40px;
+    width: 80%; }
+    #footer #ft-mail article p {
+      line-height: 20px; }
+  #footer #top {
+    padding-top: 40px; }
+    #footer #top article {
+      display: inline; }
+  #footer #copyright {
+    padding-top: 40px;
+    left: 0;
+    bottom: 0;
+    font-size: 14px; }
+
+/*# sourceMappingURL=style-contact.css.map */

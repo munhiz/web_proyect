@@ -3,8 +3,13 @@
 
 $( document ).ready(function() {
     console.log( "ready!" );
-
-
+    //funcion scrolldown
+    $("bt-portfolio").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 2000);
+    });
+    
 });
 
     /* Open */
