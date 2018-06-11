@@ -12,6 +12,13 @@ $( document ).ready(function() {
     
 });
 
+
+// adjust textarea from form
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
+
     /* Open */
     function openNav() {
         document.getElementById("myNav").style.height = '20%';

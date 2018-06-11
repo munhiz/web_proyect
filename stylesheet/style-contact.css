@@ -1,15 +1,3 @@
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
-body {
-  background-color: #909091;
-  font-family: berthold Light;
-  font-size: 18px;
-  text-decoration: none; }
-  body a {
-    text-decoration: none; }
-
 @font-face {
   font-family: Berthold Regular;
   src: url(/fonts/Berthold_akzidenz/Regular/Berthold-Regular.eot);
@@ -181,5 +169,102 @@ body {
     left: 0;
     bottom: 0;
     font-size: 14px; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  background-color: #909091;
+  font-family: Berthold Light !important;
+  font-size: 18px;
+  font-weight: 100;
+  text-decoration: none; }
+  body a {
+    text-decoration: none; }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+#content {
+  padding-top: 110px;
+  text-align: left; }
+
+#box-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.form-style-8 {
+  font-family: 'Berthold Light', arial, sans;
+  width: auto;
+  padding: 0 10%;
+  background: #FFFFFF;
+  margin: 50px auto;
+  text-align: right; }
+  .form-style-8 h2 {
+    text-transform: uppercase;
+    font-family: 'Berthold Light', sans-serif;
+    color: black;
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+    margin: -30px -30px 30px -30px; }
+  .form-style-8 textarea {
+    resize: none;
+    overflow: hidden; }
+
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select {
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Berthold Light, Helvetica, sans-serif;
+  height: 45px; }
+
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"] {
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: 'Berthold Light', sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-align: center;
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 10px 0 0 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
 
 /*# sourceMappingURL=style-contact.css.map */
