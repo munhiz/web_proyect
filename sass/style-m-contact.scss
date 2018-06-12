@@ -1,0 +1,175 @@
+
+
+@import "style-m-header";
+@import "style-m-content";
+@import "style-m-footer";
+@import "variables";
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color:white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 10px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    display: block;
+    transition: 0.3s;
+    font-family: Berthold Light;
+    text-align: right;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+
+#text-cont{
+    padding-top: 100px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .text-1{
+        padding-right:80px;
+        .first-txt{
+            font-family: Berthold Medium;
+            padding-bottom: 30px;
+
+        }
+    }
+    .text-2{
+        padding-bottom: 30px;
+    }
+    .text-3{
+        padding-right:110px;
+        .mail-txt{
+            font-family: Berthold Medium;
+        }
+        p{
+            padding-bottom: 18px;
+        }
+        p:last-child{
+            padding-bottom: 30px;
+        }
+    }
+    .text-3:last-child{
+        padding-right: none;
+    }
+    .text-4{
+        h3{
+            padding-bottom: 18px;
+            font-family: berthold Medium;
+        }
+        ul{
+            li{
+                padding-bottom: 18px;
+            }
+        }
+    }
+}
+
+
+.form-style-8{
+    font-family: 'Berthold Light', arial, sans;
+    width: auto;
+    padding: 0 15%;
+    background: #FFFFFF;
+    margin: 50px auto;
+    text-align: right;
+    padding-top: 40px;
+}
+.form-style-8 h2{
+    
+    text-transform: uppercase;
+    font-family: 'Berthold Light', sans-serif;
+    color:black;
+    font-size: 16px;
+    font-weight: 100;
+    padding-left: 7px;
+    text-align: left;
+    margin: -30px -30px 30px 0px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="url"],
+.form-style-8 textarea,
+.form-style-8 select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 14px Berthold Light, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"]{
+    // delete button class atribute
+
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 20px 0 ;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    // -------------------
+    cursor: pointer;
+    color:black;
+    font-family: 'Berthold Light', sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    text-decoration: none;
+  
+    
+}
+.form-style-8 input:hover[type="button"],
+.form-style-8 input:hover[type="submit"]{
+    text-decoration: underline
+}

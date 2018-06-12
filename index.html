@@ -19,63 +19,77 @@
         <div id='container'>
             <header id='header'>
                 <div class='top-left'>
-                    <a href="http://www.munhiz.com">
+                    <a href="index.html">
                         <span class="logo">Munhiz</span>
                     </a>
                 </div>
                 <div   class="more-bt">
-                    <img  onclick="openNav()" src="img/add.png" alt="more">
+                        <span id="hand" onmouseover="handCursor()" onclick="openNav()">more</span>
                 </div>
                 <nav class="main-menu">
                     <ul class="nav-menu">
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="pages/about.html">about</a></li>
+                        <li><a href="pages/portfolio.html">work</a></li>
+                        <li><a href="pages/contact.html">contact</a></li>
                     </ul>
                 </nav>
-                   <!-- The overlay -->
-                 <div id="myNav" class="overlay">
-                <!-- Button to close the overlay navigation -->
+                <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <a href="#">about</a>
-                    <a href="#portfolio" id="bt-portfolio">work</a>
-                    <a href="#">contact</a>
-                </div>
-            </div>
+                    <a href="pages/about.html">Sobre mí</a>
+                    <a href="#portfolio">Trabajo</a>
+                    <a href="pages/contact.html">Contact</a>
+                    <!-- <a href="#">Clients</a> -->
+                  </div>
+                  
+                  <!-- Use any element to open the sidenav -->
+                  <!-- <span onclick="openNav()">open</span> -->
+                  
+                  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                  <!-- <div id="main">
+                    ...
+                  </div>  -->
             </header>
             <main id="content">
                 <section class="container-text">
                     <article id="intro-txt">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita corporis voluptates, ducimus sapiente nisi deleniti omnis voluptas distinctio.dolor sit amet, consectetur adipisicing elit.</p>
                     </article>
-                </section>
-                <section id="portfolio">
+                    <div id="mySidenav_cat" class="sidenav_cat">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNavCat()">&times;</a>
+                            <a href="#">branding</a>
+                            <a href="#">mierder</a>
+                            <a href="#">vamos</a>
+                            <!-- <a href="#">Clients</a> -->
+                    </div>
+                    </section id="categorias">
+                    <div>
+                      <img  onclick="openNavCat()" src="../img/add.png" alt="more"> 
+                    </div>
+                    <div> <h6>filtrar por:</h6></div>
+                       
+                    <section id="portfolio">
+                    
                     <article>
                         <img src="img/Placeholder.jpg" alt="">
                         <h3>Proyect tittle </h3>
-                        <span>Diseño</span>
-                        <span>Branding</span>
+                   
                     </article>
                     <article>
                         <img src="img/Placeholder.jpg" alt="">
                         <h3>Proyect tittle </h3>
-                        <span>Diseño</span>
-                        <span>Branding</span>
+                      
                     </article>
                     <article>
                         <img src="img/Placeholder.jpg" alt="">
                         <h3>Proyect tittle </h3>
-                        <span>Diseño</span>
-                        <span>Branding</span>
+                    
                     </article>
                 </section>
             </main>
             <footer id="footer">
                 <section id="social-link">
                     <article>
-                        <h3>Social Links</h3>
+                        <h3>Sigueme en:</h3>
                         <ul>
                             <li><a href="">Facebook</a></li>
                             <li><a href="">Behance</a></li>
@@ -93,7 +107,6 @@
                         
                             <img src="img/flecha-up24.png" alt="img">
                                                                         
-                        
                             <a  class='scroll-to-top'href="#content">Up</a>
                         
                     </article>

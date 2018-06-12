@@ -9,9 +9,10 @@
         padding-top: 60px;
         text-align: left;
         li{
+            text-decoration: underline;
             padding-top: 8px;
-            a:hover{
-                text-decoration: underline;
+            a{
+                color:black;
             }
         }
     }
