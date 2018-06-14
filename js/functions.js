@@ -1,14 +1,4 @@
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-    //funcion scrolldown
-    $("bt-portfolio").click(function () {
-        $('html,body').animate({
-            scrollTop: $("#portfolio").offset().top
-        }, 2000);
-    });
-    
-});
 
 
 
@@ -16,12 +6,12 @@ $( document ).ready(function() {
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "125px";
+    document.getElementById("mySidenav").style.right = "2px";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.right = "-125px";
 }
 
 // function form contact ---------------
@@ -32,6 +22,8 @@ function adjust_textarea(h) {
     h.style.height = (h.scrollHeight)+"px";
 }
 
+// function change to hand cursor ---------------
+
 function handCursor(){
 document.getElementById("hand").style.cursor = "pointer";
 }
@@ -39,10 +31,12 @@ document.getElementById("hand").style.cursor = "pointer";
 
 /* Set the width of the side navigation to 250px */
 function openNavCat() {
-    document.getElementById("mySidenav_cat").style.width = "300px";
+    document.getElementById("mySidenav_cat").style.left = "-55px";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNavCat() {
-    document.getElementById("mySidenav_cat").style.width = "0";
+    document.getElementById("mySidenav_cat").style.left = "-300px";
+    document.getElementsByClassName(' closebtn').style.visibility='hidden';
 }
+

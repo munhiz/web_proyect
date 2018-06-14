@@ -1,8 +1,4 @@
 
-
-
-
-
 #wrapper {
     width: 100%;
     text-align: center;
@@ -21,7 +17,6 @@
             left:0;
             top:0;
             padding-top: 15px;
-     
             padding-left: 2%;
             padding-right: 2%;
             .top-left{
@@ -42,23 +37,23 @@
             .more-bt{
                 float:right;
                 text-align: right;
-                
                 z-index: 100;
             }
-        } 
-        
-        
+        }     
     }
-
 }
+
+
+//------------MENU SIDE MOBILE-----------
+
   /* The side navigation menu */
   .sidenav {
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 125px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
-    right: 0;
+    right: -125px;
     background-color:white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
@@ -102,3 +97,105 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 } 
+
+
+
+
+
+/* iPads (portrait) ----------- */
+@media (min-width: 768px) {
+
+
+   
+   
+    #wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        #container {
+            width: auto;
+            margin-right: 4%;
+            margin-left: 4%;
+            #header {
+                width: 100%;
+                margin: auto;
+                background-color:white;
+                height: 45px;
+                z-index: 100;
+                position:fixed;
+                left:0;
+                top:0;
+                padding-top: 15px;
+                padding-left: 4%;
+                padding-right: 4%;
+                .top-left{
+                    text-align: left;
+                    float: left;
+                    text-decoration: none;
+                }
+                .main-menu{
+                    display: inline;
+                }
+                .nav-menu{
+                    float: right;
+                    li{
+                    display: inline;
+                    padding-left: 15px;
+                    }
+                }
+                .more-bt{
+                   display:none;
+                }
+            }     
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        #container {
+            width: auto;
+            margin-right: 6%;
+            margin-left: 6%;
+            #header {
+                width: 100%;
+                margin: auto;
+                background-color:transparent;
+                height: 45px;
+                z-index: 100;
+                position:fixed;
+                left:0;
+                top:0;
+                padding-top: 15px;
+                padding-left: 6%;
+                padding-right: 6%;
+                .top-left{
+                    text-align: left;
+                    float: left;
+                    text-decoration: none;
+                }
+                .main-menu{
+                    display: inline;
+                }
+                .nav-menu{
+                    float: right;
+                    li{
+                    display: inline;
+                    padding-left: 15px;
+                    }
+                }
+                .more-bt{
+                   display:none;
+                }
+            }     
+        }
+    }
+
+
+
+
+}

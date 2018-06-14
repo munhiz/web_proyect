@@ -1,0 +1,51 @@
+
+
+
+
+#hand{
+    cursor: pointer;
+}
+
+#content-work{
+    text-align: left;
+    padding-top:110px;
+    #info-work{
+        padding-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 300px;
+        ul{
+            padding-bottom: 30px;
+            li{
+                padding-bottom: 8px;
+            }
+        }
+        .content-txt{
+            p{
+                line-height: 26px;
+                padding-bottom: 40px;
+                width: 300px;
+            }
+        }
+    }
+    #nav-img{
+        padding-top: 45px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        flex-grow: 1;
+        div{
+            padding-left: 10%;
+            p{
+                cursor:pointer; 
+            }
+            img{
+                width: 32px;
+                height: auto;
+                cursor:pointer;
+            }
+        }
+    }
+}
+

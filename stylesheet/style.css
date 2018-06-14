@@ -74,7 +74,7 @@ body {
 .sidenav {
   height: 100%;
   /* 100% Full-height */
-  width: 0;
+  width: 125px;
   /* 0 width - change this with JavaScript */
   position: fixed;
   /* Stay in place */
@@ -82,7 +82,7 @@ body {
   /* Stay on top */
   top: 0;
   /* Stay at the top */
-  right: 0;
+  right: -125px;
   background-color: white;
   /* Black*/
   overflow-x: hidden;
@@ -127,22 +127,90 @@ body {
 
   .sidenav a {
     font-size: 18px; } }
+/* iPads (portrait) ----------- */
+@media (min-width: 768px) {
+  #wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; }
+    #wrapper #container {
+      width: auto;
+      margin-right: 4%;
+      margin-left: 4%; }
+      #wrapper #container #header {
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        height: 45px;
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding-top: 15px;
+        padding-left: 4%;
+        padding-right: 4%; }
+        #wrapper #container #header .top-left {
+          text-align: left;
+          float: left;
+          text-decoration: none; }
+        #wrapper #container #header .main-menu {
+          display: inline; }
+        #wrapper #container #header .nav-menu {
+          float: right; }
+          #wrapper #container #header .nav-menu li {
+            display: inline;
+            padding-left: 15px; }
+        #wrapper #container #header .more-bt {
+          display: none; } }
+@media (min-width: 1024px) {
+  #wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; }
+    #wrapper #container {
+      width: auto;
+      margin-right: 6%;
+      margin-left: 6%; }
+      #wrapper #container #header {
+        width: 100%;
+        margin: auto;
+        background-color: transparent;
+        height: 45px;
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding-top: 15px;
+        padding-left: 6%;
+        padding-right: 6%; }
+        #wrapper #container #header .top-left {
+          text-align: left;
+          float: left;
+          text-decoration: none; }
+        #wrapper #container #header .main-menu {
+          display: inline; }
+        #wrapper #container #header .nav-menu {
+          float: right; }
+          #wrapper #container #header .nav-menu li {
+            display: inline;
+            padding-left: 15px; }
+        #wrapper #container #header .more-bt {
+          display: none; } }
 #content {
   width: 100%;
   background-color: #FFFFFF;
   height: auto;
   margin-bottom: 10px; }
-  #content #categorias div {
-    width: 100px;
-    display: inline; }
+  #content #categorias {
+    text-align: left; }
+    #content #categorias img {
+      float: left; }
   #content #portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    justify-content: space-between; }
+    padding-top: 10px; }
     #content #portfolio article {
       text-align: left;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      width: 100%; }
       #content #portfolio article img {
         width: 100%;
         padding-bottom: 5px; }
@@ -160,34 +228,34 @@ body {
   background-color: rosybrown;
   height: 40px;
   /* 100% Full-height */
-  width: 0;
+  width: 300px;
   /* 0 width - change this with JavaScript */
   position: relative;
   /* Stay in place */
   z-index: 1;
   /* Stay on top */
-  top: 80px;
+  top: 31px;
   /* Stay at the top */
-  left: 0;
+  left: -300px;
   background-color: white;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 6px;
+  padding-top: 7px;
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */ }
 
 /* The navigation menu links */
 .sidenav_cat a {
-  padding: 8px 5px 8px 32px;
+  padding: 8px 0px 8px 5px;
   text-decoration: none;
   font-size: 18px;
   color: black;
   display: inline;
   transition: 0.3s;
   font-family: Berthold Regular;
-  text-align: right; }
+  text-align: left; }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav_cat a:hover {
@@ -196,9 +264,9 @@ body {
 /* Position and style the close button (top right corner) */
 .sidenav_cat .closebtn {
   position: absolute;
-  top: 2px;
+  top: 0px;
   left: 210px;
-  font-size: 10px;
+  font-size: 22px;
   margin-left: 50px; }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -213,12 +281,25 @@ body {
 
   .sidenav a {
     font-size: 18px; } }
+@media (min-width: 768px) {
+  #content #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 10px; }
+    #content #portfolio article {
+      text-align: left;
+      padding-bottom: 15px;
+      width: 50%; }
+      #content #portfolio article img {
+        width: 100%;
+        padding-bottom: 5px; } }
 #footer {
   width: 100%;
   background-color: #FFFFFF;
   text-align: left; }
   #footer #social-link {
-    padding-top: 60px;
+    padding-top: 45px;
     text-align: left; }
     #footer #social-link li {
       text-decoration: underline;
@@ -229,9 +310,11 @@ body {
     padding-top: 40px;
     width: 80%; }
     #footer #ft-mail article p {
-      line-height: 20px; }
+      line-height: 26px; }
   #footer #top {
     padding-top: 40px; }
+    #footer #top img {
+      cursor: pointer; }
     #footer #top article {
       display: inline; }
   #footer #copyright {
@@ -239,5 +322,168 @@ body {
     left: 0;
     bottom: 0;
     font-size: 14px; }
+
+#caja {
+  display: none; }
+
+@media (min-width: 768px) {
+  #social-link {
+    display: none; }
+
+  #footer #caja {
+    display: inline; }
+    #footer #caja .vertical-text {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transform-origin: right bottom;
+      /* margin-right: 35px; */
+      z-index: 999;
+      transform: rotate(-90deg) translateX(100%); }
+      #footer #caja .vertical-text li {
+        display: inline;
+        padding-right: 5px; }
+      #footer #caja .vertical-text .share {
+        font-size: 10px;
+        color: red; }
+
+  #caja.entra {
+    transform: translateX(999); } }
+#info-me {
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left; }
+  #info-me ul {
+    width: 300px; }
+  #info-me article p {
+    width: 300px; }
+
+#text-cont {
+  padding-top: 100px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  #text-cont .text-1 {
+    padding-right: 80px; }
+    #text-cont .text-1 .first-txt {
+      font-family: Berthold Medium;
+      padding-bottom: 30px; }
+  #text-cont .text-2 {
+    padding-bottom: 30px; }
+  #text-cont .text-3 {
+    padding-right: 110px; }
+    #text-cont .text-3 .mail-txt {
+      font-family: Berthold Medium; }
+    #text-cont .text-3 p {
+      padding-bottom: 18px; }
+    #text-cont .text-3 p:last-child {
+      padding-bottom: 30px; }
+  #text-cont .text-3:last-child {
+    padding-right: none; }
+  #text-cont .text-4 h3 {
+    padding-bottom: 18px;
+    font-family: berthold Medium; }
+  #text-cont .text-4 ul li {
+    padding-bottom: 18px; }
+
+.form-style-8 {
+  font-family: 'Berthold Light', arial, sans;
+  width: auto;
+  padding: 0 15%;
+  background: #FFFFFF;
+  margin: 50px auto;
+  text-align: right;
+  padding-top: 40px; }
+
+.form-style-8 h2 {
+  text-transform: uppercase;
+  font-family: 'Berthold Light', sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  padding-left: 7px;
+  text-align: left;
+  margin: -30px -30px 30px 0px; }
+
+.form-style-8 input[type="text"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="url"],
+.form-style-8 textarea,
+.form-style-8 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 14px Berthold Light, Helvetica, sans-serif;
+  height: 45px; }
+
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden; }
+
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 20px 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  cursor: pointer;
+  color: black;
+  font-family: 'Berthold Light', sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  text-decoration: none; }
+
+.form-style-8 input:hover[type="button"],
+.form-style-8 input:hover[type="submit"] {
+  text-decoration: underline; }
+
+#hand {
+  cursor: pointer; }
+
+#content-work {
+  text-align: left;
+  padding-top: 110px; }
+  #content-work #info-work {
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px; }
+    #content-work #info-work ul {
+      padding-bottom: 30px; }
+      #content-work #info-work ul li {
+        padding-bottom: 8px; }
+    #content-work #info-work .content-txt p {
+      line-height: 26px;
+      padding-bottom: 40px;
+      width: 300px; }
+  #content-work #nav-img {
+    padding-top: 45px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-grow: 1; }
+    #content-work #nav-img div {
+      padding-left: 10%; }
+      #content-work #nav-img div p {
+        cursor: pointer; }
+      #content-work #nav-img div img {
+        width: 32px;
+        height: auto;
+        cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

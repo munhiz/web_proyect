@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../stylesheet/reset.css">
-    <link rel="stylesheet" href="../stylesheet/style-about.css">
-    <title>web_munhiz</title>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <title>work</title>
 </head>
+
 <body>
     <div id='wrapper'>
         <div id='container'>
             <header id='header'>
                 <div class='top-left'>
-                    <a href="http://www.munhiz.com">
+                    <a href="../index.html">
                         <span class="logo">Munhiz</span>
                     </a>
                 </div>
-                <div  class="more-bt">
-                    <img  onclick="openNav()" src="../img/add.png" alt="more">
+                <div class="more-bt">
+                    <span id="hand" onmouseover="handCursor()" onclick="openNav()">more</span>
+                    <!-- <a onclick="openNav()" href="">more</a> -->
+                     <!-- <img  onclick="openNav()" src="../img/add.png" alt="more">  -->
                 </div>
                 <nav class="main-menu">
                     <ul class="nav-menu">
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="pages/about.html">about</a></li>
+                        <li><a href="#portfolio">work</a></li>
+                        <li><a href="pages/contact.html">contact</a></li>
                     </ul>
                 </nav>
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">Sobre mi</a>
-                    <a href="#">Trabajo</a>
-                    <a href="#">Contacto</a>
-                    <!-- <a href="#">clientes</a> -->
+                    <a href="about.html">Sobre mí</a>
+                    <a href="#portfolio">Trabajo</a>
+                    <a href="contact.html">Contact</a>
+                    <!-- <a href="#">Clients</a> -->
                   </div>
                   <!-- Use any element to open the sidenav -->
                   <!-- <span onclick="openNav()">open</span> -->
@@ -41,12 +45,47 @@
                     ...
                   </div>  -->
             </header>
-            <main id="content">
-               
+            <main id="content-work">
+                <section class="container-txt-me">
+                    <article id="info-me">
+                        <ul>
+                            <li>Pablo González Muñiz</li>
+                            <li>Creativo, soñador y diseñador</li>
+                        </ul>
+                        <article class="content-txt" >
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magni expedita corporis voluptates, ducimus sapiente nisi deleniti omnis voluptas distinctio.dolor sit amet, consectetur adipisicing elit.omnis voluptas distinctio.dolor sit amet, consectetur adipisicing elit.</p>
+                        </article>
+                    </article>
+                </section>
+                <section id="img-me">
+                    
+                    <article>
+                        <img src="../img/Placeholder.jpg" alt="">
+                 
+                       
+                    </article>
+                    <article>
+                        <img src="../img/Placeholder.jpg" alt="">
+                
+                      
+                    </article>
+                    <article>
+                        <img src="../img/Placeholder.jpg" alt="">
+                    
+                       
+                    </article>
+                </section>
             </main>
             <footer id="footer">
                 <section id="social-link">
-                   
+                    <article>
+                        <h3>Sigueme en:</h3>
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Behance</a></li>
+                            <li><a href="">Linkedin</a></li>
+                        </ul>
+                    </article>
                 </section>
                 <section id="ft-mail">
                     <article>
@@ -55,8 +94,10 @@
                 </section>
                 <section id="top">   
                     <article>
-                        <img src="flecha-up24.png" alt="img">
-                        <a  class='scroll-to-top'href="#content"><p>Up</p></a>
+                        
+                            <img class='scroll-to-top' src="img/flecha-up24.png" alt="img">                                            
+                            <a  class='scroll-to-top' href="">Top</a>
+                        
                     </article>
                 </section>
                 <section id="copyright">
@@ -65,8 +106,9 @@
             </footer>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/jquery-full.js"></script>
     <script src="../js/functions.js"></script>
+    <script src="../js/function_jq.js"></script>
+ 
 </body>
 </html> 
