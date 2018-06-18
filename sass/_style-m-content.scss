@@ -3,7 +3,19 @@
     background-color:#FFFFFF;
     height:auto;
     margin-bottom:10px;
+    #categorias::before{
+            content:"";
+            width: 300px;
+            height: 42px;
+            background-color:white;
+            position: absolute;
+            left:-300px;
+            
+            z-index: 9;
+    }
     #categorias{
+        position:relative;
+        
         text-align: left;
         img{
             float: left;
@@ -11,7 +23,7 @@
     }
     #portfolio{
     
-        padding-top: 10px;
+        padding-top: 15px;
       article{
           text-align: left;
           padding-bottom: 15px;
@@ -43,14 +55,14 @@
  /* The side navigation menu */
  .sidenav_cat {
     background-color:  rosybrown;
-    height: 40px; /* 100% Full-height */
+    height: 34px; /* 100% Full-height */
     width: 300px; /* 0 width - change this with JavaScript */
     position: relative; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 31px; /* Stay at the top */
+    top: 27px; /* Stay at the top */
     left: -300px;
     background-color:white; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
+    // overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 7px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
